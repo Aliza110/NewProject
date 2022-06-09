@@ -21,9 +21,10 @@ public class Array_ {
 
 	/** Returns 10 random integers */
 	public static int[] getArray() {
-		int[] array = new int[10];
+		int[] array = new int[100];
 		for (int i = 0; i < array.length; i++) {
-			array[i] = (int)(Math.random() * 10) + 1;
+			array[i] = (int)(Math.random() * 100) + 1;
 		}
 		return array;}
 }
+//t\hos is updated
