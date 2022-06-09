@@ -1,0 +1,29 @@
+import java.util.*;
+public class Array_ {
+	public static void main(String[] args) {
+		// Create a Scanner
+		Scanner input = new Scanner(System.in);
+
+		// Invoke getArray method
+		int[] array = getArray();
+
+		// Prompt the user to enter the index of the array
+		System.out.print("Enter the index of the array: ");
+		try {
+			// Display the corresponding element value
+			System.out.println("The corresponding element value is " + 
+				array[input.nextInt()]);
+		}
+		catch (ArrayIndexOutOfBoundsException ex) {
+			System.out.println("Out of Bounds.");
+		}
+	}
+
+	/** Returns 10 random integers */
+	public static int[] getArray() {
+		int[] array = new int[10];
+		for (int i = 0; i < array.length; i++) {
+			array[i] = (int)(Math.random() * 10) + 1;
+		}
+		return array;}
+}
